@@ -131,6 +131,7 @@ class _BaseGiffyDialogState extends State<BaseGiffyDialog>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Expanded(
+          flex: 2,
           child: ClipRRect(
             borderRadius: BorderRadius.only(
                 topRight: Radius.circular(widget.cornerRadius),
@@ -139,6 +140,7 @@ class _BaseGiffyDialogState extends State<BaseGiffyDialog>
           ),
         ),
         Expanded(
+          flex: 3,
           child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
