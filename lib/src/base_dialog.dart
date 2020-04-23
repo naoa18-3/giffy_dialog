@@ -142,7 +142,7 @@ class _BaseGiffyDialogState extends State<BaseGiffyDialog>
         Expanded(
           flex: 3,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(top: 16.0),
