@@ -149,11 +149,16 @@ class _BaseGiffyDialogState extends State<BaseGiffyDialog>
                 child: widget.title,
               ),
               Expanded(
-                child: SingleChildScrollView(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: widget.description,
-                  ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: widget.description,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               _buildButtonsBar(context)
